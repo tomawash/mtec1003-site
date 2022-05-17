@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, ititial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+	<title>Home</title>
+</head>
+
+<body>
+
+	<img src="images/checkerboard.gif" class="banner" width="" alt="banner">
+
+	<div id="navbar">
+		<a href="index.html">Home</a>
+		<a href="about_me.html">About Me</a>
+		<a href="portfolio_1.html">Portfolio</a>
+		<a href="contact.html">Contact</a>
+	</div>
+
+	<div class="topText">
+		<h1>Tomasz Wiercioch</h1>
+		<h3>Game Artist & Animator</h3>
+	</div>
+
+	<div class="galleryImage">
+		<img src="images/bg_1.png" id="imgClick" onclick="changeImage()">
+	</div>
+
+	<h2><a href="about_me.html">About</a></h2>
+
+	<h3>Portfolio</h3>
+
+	<div id="portfolioIcons">
+	<a href="portfolio_1.html"><img class="portfolio" src="images/thumbnail_gbc.png" width="" alt="pretty image goes here"></a>
+	<a href="portfolio_1.html"><img class="portfolio" src="images/thumbnail_new.png" width="" alt="another image goes here"></a>
+	</div>
+
+	<h2><a href="contact.html">Contact</a></h2>
+
+	<script>
+
+	var imgCounter = 0;
+
+	function changeImage() {
+		if(imgCounter == 0) {
+			document.getElementById("imgClick").src = "images/bg_2.png";
+			imgCounter = 1;
+		} else if(imgCounter == 1) {
+			document.getElementById("imgClick").src = "images/bg_3.png";
+			imgCounter = 2;
+		} else if(imgCounter == 2) {
+			document.getElementById("imgClick").src = "images/bg_1.png";
+			imgCounter = 0;
+		}
+	}
+	
+	</script>
+</body>
+</html>
