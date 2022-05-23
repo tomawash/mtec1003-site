@@ -63,6 +63,8 @@
 
       	context.clearRect(0, 0, sketch.offsetWidth, sketch.offsetHeight);
       	context.fillRect(rectangle.x, rectangle.y, 40, 40);
+        context.fillRect(rectangle.x + 100, rectangle.y, 40, 40);
+        context.fillRect(rectangle.x - 100, rectangle.y, 40, 40);
       	rectangle.x = rectangle.x + dx * dir;
       	if(rectangle.x > 960) {
       		dir = dir * -1;
